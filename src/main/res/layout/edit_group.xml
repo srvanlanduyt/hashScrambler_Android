@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Edit Group"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/current_name_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Current Name:"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/current_group_name"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:textColor="#D81B60"
+            android:textSize="36sp" />
+
+        <TextView
+            android:id="@+id/current_list_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Current List:"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/current_group_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="This list is empty..."
+            android:textColor="#D81B60" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/group_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="New Group Name" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/save_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save Name " />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/list_string"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Add List Items (Seperated by a space)" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/save_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save Group" />
+
+        <TextView
+            android:id="@+id/spacer"
+            android:layout_width="match_parent"
+            android:layout_height="70dp" />
+
+        <Button
+            android:id="@+id/clear_list_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Clear All List Items"
+            android:textColor="#FF0000"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+</ScrollView>

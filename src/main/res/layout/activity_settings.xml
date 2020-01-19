@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <TextView
+        android:id="@+id/settings_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Settings"
+        android:textSize="36sp" />
+
+    <TextView
+        android:id="@+id/Spacer"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+
+    <Switch
+        android:id="@+id/scramble_on_copy_all"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Scramble on Copy All"
+        android:defaultValue="false"
+        android:textColor="#606060" />
+
+    <TextView
+        android:id="@+id/spacer_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Switch
+        android:id="@+id/paragraph_switch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Paragraph Spacing"
+        android:defaultValue="false"
+        android:textColor="#606060" />
+
+</LinearLayout>
